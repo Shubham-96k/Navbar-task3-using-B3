@@ -1,0 +1,82 @@
+.navbar-default.mynavbar{
+	background-color: #000;
+	border: none;
+	border-radius: 0px;
+}
+.mynavbar .navbar-brand{
+	width: 120px;
+}
+.mynavbar .navbar-brand img{
+	width: 100%;
+}
+
+.navbar-default.mynavbar .navbar-nav .active>a,
+.navbar-default.mynavbar .navbar-nav .active>a:focus, 
+.navbar-default.mynavbar .navbar-nav .active>a:hover{
+    color: #000;
+    background-color: orange;
+}
+
+/* .navbar-default.mynavbar .navbar-nav>li>a::after {
+    content: " ";
+    background-color: orange;
+    height: 50px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+	z-index: -1;
+	transition: all .3s ease-in-out;
+} */
+
+.navbar-default.mynavbar .navbar-nav>li>a{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	position: relative;
+	z-index: 1;
+	transition: all .3s ease-in-out;
+}
+
+
+
+.navbar-default.mynavbar .navbar-nav>li>a:focus, 
+.navbar-default.mynavbar .navbar-nav>li>a:hover::after{
+    color: #000;
+    background-color: orange;
+	width: 100%;
+	left: 0;
+}
+
+.mynavbar .nav>li {
+	margin-bottom: 5px;
+}
+
+
+
+@media all and (min-width: 1200px){
+	.mynavbar .navbar-nav>li{
+		margin-right: 5px;
+		margin-bottom: 0px;
+	}
+	.navbar-default.mynavbar .navbar-nav>li>a::after {
+		content: " ";
+		background-color: orange;
+		height: 50px;
+		width: 0;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: -1;
+		transition: all .3s ease-in-out;
+	}
+}
+
+
+
+.box{
+	height: 300px;
+	background: linear-gradient(45deg ,#000,#fff,#ff0000);
+	margin-bottom: 20px;
+}
